@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import {jsx} from '@emotion/core'
+
 import 'bootstrap/dist/css/bootstrap-reboot.css'
 import '@reach/dialog/styles.css'
 import * as React from 'react'
@@ -54,6 +55,7 @@ function App() {
   function register(formData) {
     console.log('register', formData)
   }
+
   return (
     <div
       css={{
@@ -67,12 +69,6 @@ function App() {
     >
       <Logo width="80" height="80" />
       <h1>Bookshelf</h1>
-      {/*
-        🐨 the two buttons are too close, let's space them out
-          🎨 apply this to the div right below
-            
-      */}
-      {/* 🐨 And make sure to use the new Button component for all these buttons */}
       <div
         css={{
           display: 'grid',
